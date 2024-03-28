@@ -1,6 +1,9 @@
-# gravitational microlens
- gravitation lensing effect to obtain data on exoplanets
+# Gravitational Microlens
+ Gravitation lensing effect to obtain data on exoplanet
 
-Two Lens Mag Plot
+## Códigos de estudo
 
-analise de plot da magnitude para duas lentes dentro do anel de Einstein
+### 
+- [Mag plot OGLE]()
+- [two lens mag plot]()
+- 
