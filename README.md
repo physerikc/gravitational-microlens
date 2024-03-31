@@ -4,7 +4,7 @@
 ## Study codes
 
 ### 
-- [OGLE plot one lens]()
+- [OGLE plot one lens](codes/ogle_one_lens.ipynb)
 - [Polynomial plot two lens]()
 
 ## Search codes
