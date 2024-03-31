@@ -6,7 +6,13 @@ import math
 import warnings
 from numpy.polynomial import Polynomial
 from sympy import *
+import matplotlib.pyplot as plt
 
+def plot_ticks():
+    plt.figure(figsize = (8,5))     
+    plt.minorticks_on()     
+    plt.tick_params(axis='x', which='both', top = True, right = True, direction = 'in', length=5, width=1)     
+    plt.tick_params(axis='y', which='both', top = True, right = True, direction = 'in', length=5, width=1)
 
 def path(mu, alpha, tE, t0, pontosLC, area, tEx):
   raz = (tEx - t0)/tE
