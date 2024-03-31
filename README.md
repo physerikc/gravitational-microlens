@@ -5,7 +5,7 @@
 
 ### 
 - [OGLE plot one lens](codes/ogle_one_lens.ipynb)
-- [Polynomial plot two lens]()
+- [Polynomial plot two lens](codes/poly_two_lens.ipynb)
 
 ## Search codes
 
