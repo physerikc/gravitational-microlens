@@ -4,7 +4,13 @@
 ## Study codes
 
 ### 
-- [Mag plot OGLE]()
-- [two lens mag plot]()
+- [OGLE plot one lens]()
+- [Polynomial plot two lens]()
 
 ## Search codes
+
+## Ajusts
+- universal parameter n
+- ajusts functions
+- modify x axis
+- add condition to disfromcaustic
