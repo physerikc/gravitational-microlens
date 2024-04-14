@@ -4,35 +4,38 @@ import matplotlib.pyplot as plt
 num_pontos = 50000
 cart_pontos = 200
 
-r1 = np.array([0])
-r2 = np.array([-0.75, 0.75])
-r3 = np.array([-1.25, 0, 1.25])
-
-n1, n2, n3 = 1, 2, 3
-
 def make_complex(x, y):
     return x + 1j*y
     
 def pos_final(zi, n, r):
-
-  e1 = 0.5
-  e2 = 0.5
-  e3 = 1 - e1 - e2
     
-  soma = 0
-  e = np.array([e1, e2, e3])
-
-  for j in range(1, n+1):
-    z_r = zi - r[j-1]
-    soma += (e[j-1]*(z_r))/abs(z_r)**2
-  z = zi - soma
-  return z
-
-def zs_final_position(Zp):
+    if n == 1:
+        e1 = 1
+        e2 = 0
+        e3 = 1 - e1 - e2
+    elif n == 2:
+        e1 = 0.5
+        e2 = 0.5
+        e3 = 1 - e1 - e2
+    elif n == 3:
+        e1 = 0.333
+        e2 = 0.333
+        e3 = 1 - e1 - e2
+        
+    soma = 0
+    e = np.array([e1, e2, e3])
+    
+    for j in range(1, n+1):
+        z_r = zi - r[j-1]
+        soma += (e[j-1]*(z_r))/abs(z_r)**2
+        z = zi - soma
+    return z
+        
+def zs_final_position(Zp, n, r):
     zs = []
     
     for zi in Zp:
-        z = pos_final(zi, n2, r2)
+        z = pos_final(zi, n, r)
         zs.append(z)
     x = np.real(zs)
     y = np.imag(zs)
